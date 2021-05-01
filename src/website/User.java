@@ -1,12 +1,12 @@
 package website;
 
 public class User {
-	 int id;
-	 String userName;
-	 String password;
-	 String adress;
-	 String email;
-	 String course;
+	 private int id;
+	 private String userName;
+	 private String password;
+	 private String adress;
+	 private String email;
+	 private String course;
 	
 		public User() {}
 	

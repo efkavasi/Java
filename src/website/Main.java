@@ -12,12 +12,21 @@ public class Main {
 		usermanager.userRemove(user2);
 		
 		
-		Student student= new Student(005, "Gökhan", "asdasd", "İstanbul", "gokhan@gokhan.com","java","Hacettepe");
+		Student student= new Student();
+		student.setId(003);
+		student.setUserName("Gökhan");
+		student.setEmail("gokhan@gokhan.com");
+		student.setAdress("Bursa");
+		
 		
 		StudentManager studentManager =new StudentManager();
 		studentManager.userDetail(student);
 		
-		Instructor instructor = new Instructor(007, "Hülya", "wwww123", "Bursa", "hülya@hülya.com", "python", "yüksek lisans", "İstanbul Teknik Üniversitesi");
+		Instructor instructor = new Instructor();
+		instructor.setUserName("hülya");
+		instructor.setCourse("phyton");
+		instructor.setEducation("yüksek lisans");
+		instructor.setHistory("ver yansın halayı");
 		
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.userAdd(instructor);
